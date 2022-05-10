@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <h1>Contact Form</h1>
+
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your name" minlength="2"> <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" maxlength="5"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass"> <br><br>
+        Gender:
+        Male : <input type="radio" name="gender" id="male">
+        Female : <input type="radio" name="gender" id="female"> <br><br>
+
+        Hobbies :
+        cricket <input type="checkbox" name="cricket" id="cricket">
+        listening <input type="checkbox" name="listening" id="listening">
+        Reading <input type="checkbox" name="reading" id="reading"><br><br>
+
+        <label for="course">Course</label>
+        <select name="" id="course">
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JS</option>
+            <option value="">Bootstrap</option>
+        </select><br><br>
+
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="10" rows="5"></textarea><br><br>
+
+        <label for="browsers">Select your browser</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br><br>
+
+        <label for="number">Enter you phone number</label>
+        <input type="tel" name="number" id="number" step="" ><br><br>
+
+
+        <label for="bdate">Date of Birth</label>
+        <input type="date" name="date" id="bdate"><br><br>
+
+        <label for="color">Select your color</label>
+        <input type="color" name="color" id="color"><br><br>
+
+
+        <label for="photo">upload your image</label><br><br>
+        <input type="file" name="photo" id="photo" multiple>
+
+        <input type="submit" value="send">
+        <input type="reset" value="clear">
+
+    </form>
+</body>
+
+</html>
